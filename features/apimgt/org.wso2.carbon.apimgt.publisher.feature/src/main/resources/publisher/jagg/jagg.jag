@@ -757,8 +757,7 @@ var getThemeFile = function (path) {
             print({ error :true , message:msg.error.csrfError});
             return false;
         }
-    }    
-
+    }
     return {
         setUser:setUser,
         getUser:getUser,
@@ -804,7 +803,8 @@ var getThemeFile = function (path) {
 		getSiteContext:getSiteContext,
         setCSRFToken:setCSRFToken,
         isCSRFTokenValid:isCSRFTokenValid,
-        getAbsoluteReqUrl:getAbsoluteReqUrl
+        getAbsoluteReqUrl:getAbsoluteReqUrl,
+        validateForScript:validateForScript
     };
 
 }());
